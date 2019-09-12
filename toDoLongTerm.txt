@@ -1,0 +1,10 @@
+Long-Term To-Do List
+
+1. DONE Create life/death engine, complete with hunger, sleep, thirst, bathroom, create menu system
+2. DONE Player can use inventory items or events, such as food and water, to replenish vitals
+3. DONE Switch maps/levels, while still storing all of the data ( map, inventory, NPC )
+4. DONE Fetch and Retrieve storyline, storing storyline state, gameState in Home.js
+5. Convert to mobile friendly and update all menus/inventory
+6. Update spritesheet to use custom graphics or use gifs
+7. Switch from localStorage to using NodeJS, MongoDB, etc, and host on Heroku
+8. Update NPCs to have basic movement

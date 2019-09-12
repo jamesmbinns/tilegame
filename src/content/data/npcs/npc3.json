@@ -1,0 +1,35 @@
+{
+    "story": {
+        "intro": {
+            "type": "question",
+            "text": "Would you like a free sample of tea and bread?",
+            "responses": [
+                {
+                    "action": {
+                        "giveItems": [
+                            {
+                                "type": 2,
+                                "quantity": 2
+                            },
+                            {
+                                "type": 1,
+                                "quantity": 2
+                            }
+                        ],
+                        "storyLocation": "enjoy"
+                    },
+                    "text": "Yes"
+                },
+                {
+                    "action": "exit",
+                    "text": "No"
+                }
+            ]
+        },
+
+        "enjoy": {
+            "type": "text",
+            "text": "Please enjoy!"
+        }
+    }
+}

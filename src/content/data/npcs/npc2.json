@@ -1,0 +1,45 @@
+{
+    "story": {
+        "intro": {
+            "type": "text",
+            "text": "If you have two Bread, I have a key card."
+        },
+
+        "hasTwoBread": {
+            "type": "question",
+            "text": "Would you like to trade two Bread for a military key card?",
+            "responses": [
+                {
+                    "action": {
+                        "updatedStoryState": {
+                            "receivedMilitaryCard": true
+                        },
+                        "takeItems": [
+                            {
+                                "type": 2,
+                                "quantity": 2
+                            }
+                        ],
+                        "giveItems": [
+                            {
+                                "type": 3,
+                                "quantity": 1
+                            }
+                        ],
+                        "storyLocation": "receivedMilitaryCard"
+                    },
+                    "text": "Yes"
+                },
+                {
+                    "action": "exit",
+                    "text": "No"
+                }
+            ]
+        },
+
+        "receivedMilitaryCard": {
+            "type": "text",
+            "text": "Enjoy that military card!"
+        }
+    }
+}

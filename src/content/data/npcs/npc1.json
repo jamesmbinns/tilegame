@@ -1,0 +1,103 @@
+{
+    "story": {
+        "intro": {
+            "type": "question",
+            "text": "Where do you come from, stranger?",
+            "responses": [
+                {
+                    "action": {
+                        "storyLocation": "earthResponse"
+                    },
+                    "text": "Earth"
+                },
+                {
+                    "action": {
+                        "storyLocation": "lunaResponse"
+                    },
+                    "text": "Luna"
+                },
+                {
+                    "action": {
+                        "storyLocation": "blackResponse"
+                    },
+                    "text": "The Black"
+                }
+            ]
+        },
+
+        "earthResponse": {
+            "type": "question",
+            "text": "Earth? That's where I am from! What part of Earth do you call home?",
+            "responses": [
+                {
+                    "action": "exit",
+                    "text": "Africa"
+                },
+                {
+                    "action": "exit",
+                    "text": "Asia"
+                },
+                {
+                    "action": "exit",
+                    "text": "The Americas"
+                },
+                {
+                    "action": "exit",
+                    "text": "Europe"
+                },
+                {
+                    "action": "exit",
+                    "text": "An Island"
+                }
+            ]
+        },
+
+        "lunaResponse": {
+            "type": "text",
+            "text": "Interesting. One of my coworkers is from Luna. Some crater or other."
+        },
+
+        "blackResponse": {
+            "type": "text",
+            "text": "I've never met anyone from The Black before."
+        },
+
+        "receivedMilitaryCard": {
+            "type": "question",
+            "text": "Is that a military key card? Can I have it?",
+            "responses": [
+                {
+                    "action": {
+                        "updatedStoryState": {
+                            "gaveMilitaryCard": true
+                        },
+                        "takeItems": [
+                            {
+                                "type": 3,
+                                "quantity": 1
+                            }
+                        ],
+                        "storyLocation": "gaveMilitaryCard"
+                    },
+                    "text": "Yes, here you go"
+                },
+                {
+                    "action": {
+                        "storyLocation": "keepMilitaryCard"
+                    },
+                    "text": "No"
+                }
+            ]
+        },
+
+        "gaveMilitaryCard": {
+            "type": "text",
+            "text": "Finally, I have a military key card!"
+        },
+
+        "keepMilitaryCard": {
+            "type": "text",
+            "text": "I want that card."
+        }
+    }
+}

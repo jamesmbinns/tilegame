@@ -1,0 +1,11 @@
+Short-Term To-Do List
+
+Goal:
+Convert to mobile friendly and update all menus/inventory
+
+Steps:
+1. Convert to mobile-first by creating mobile controls and mobile-only styling ( 375 x 375 ), etc.
+2. Scale on mobile ( canvas fills screen, controls fit nicely )
+3. Update menus to change based on mobile vs. desktop. Desktop ( on top of canvas ), mobile ( beneath canvas )
+4. Update inventory to new pattern ( tile-based, like Don't Starve )
+5. Handle screen resizing, possibly landscape http://www.williammalone.com/articles/html5-game-scaling/

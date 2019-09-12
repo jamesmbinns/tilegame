@@ -1,0 +1,47 @@
+.mobileControls{
+    .movementControls{
+        width: 150px;
+        height: 150px;
+        position: relative;
+
+        div{
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            cursor: pointer;
+
+            &:active{
+                background-color: blue;
+            }
+
+            &.moveLeft{
+                position: absolute;
+                left: 0;
+                top: 55px;
+            }
+
+            &.moveUp{
+                position: absolute;
+                top: 0;
+                left: 55px;
+            }
+
+            &.moveRight{
+                position: absolute;
+                right: 0;
+                top: 55px;
+            }
+
+            &.moveDown{
+                position: absolute;
+                bottom: 0;
+                left: 55px;
+            }
+        }
+    }
+}

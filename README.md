@@ -6,7 +6,7 @@ In this engine the character has Health, Thirst, Hunger, and Bathroom visible in
 
 ### Steps to Get Running
 1. Copy down the repo and ensure you have ```npm``` installed on your local machine
-2. Navigate to the repo directory on your local machine and run ```npm run dev```
+2. Navigate to the repo directory on your local machine and run ```npm install``` followed by ```npm run dev```
 3. In your browser navigate to localhost:8080
 4. Click ```Start Game``` to play
 5. Arrow keys move the character, spacebar allows you to speak with NPCs and pick up objects off the ground

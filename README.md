@@ -4,7 +4,10 @@ This is a small 2D game engine built using the native DOM Canvas API. A small Re
 
 In this engine the character has Health, Thirst, Hunger, and Bathroom visible in the text-only HUD in the top right hand corner. The engine constantly reduces Thirst, Hunger, and Bathroom. When these values are at 0, Health is steadily reduced. When Health hits 0, the player dies and is presented with a a "You Died" screen to restart the game. The player can click on ```Inventory``` in the HUD and consume/use bread and tea to boost their Hunger and Thirst, respectively.
 
-### Steps to Get Running
+### Live Demo
+[Heroku Link](https://jamietilegame.herokuapp.com)
+
+### Steps to Run Locally
 1. Clone the repo and ensure you have ```npm``` installed on your local machine
 2. Navigate to the repo directory on your local machine and run ```npm install``` followed by ```npm run dev```
 3. In your browser navigate to localhost:8080

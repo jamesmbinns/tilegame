@@ -1,16 +1,16 @@
 // Libraries
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 // Components
 import Home from "react/pages/Home.js";
 
 const Main = () => (
-    <div className="appBody">
-        <Switch>
-            <Route exact path="/" component={ Home }/>
-        </Switch>
-    </div>
+  <div className="appBody">
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+    </Routes>
+  </div>
 );
 
 export default Main;

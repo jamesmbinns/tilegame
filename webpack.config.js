@@ -1,4 +1,5 @@
 module.exports = {
+  mode: "development",
   entry: {
     react: "./src/index.js",
   },
@@ -42,5 +43,11 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     static: "./",
+  },
+
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
   },
 };
